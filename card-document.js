@@ -1,5 +1,5 @@
 $(function() {
-    $('input').validateCreditCard(function(result) {
+    $('input #number').validateCreditCard(function(result) {
         $('.log').html('Card type: ' + (result.card_type == null ? '-' : result.card_type.name)
                  + '<br>Valid: ' + result.valid
                  + '<br>Length valid: ' + result.length_valid
